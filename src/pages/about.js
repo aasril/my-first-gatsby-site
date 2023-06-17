@@ -1,21 +1,19 @@
 import * as React from 'react'
 import Layout from '../components/layout'
+import Seo from '../components/seo'
 
 const AboutPage = () => {
-    return (
-        <Layout pageTitle="About Me">
-            <p>Hi there! I'm the proud creator of this site, which I built with
-                Gatsby.
-            </p>
-        </Layout>
-    )
+  return (
+    <Layout pageTitle="About Me">
+      <p>Hi there! I'm the proud creator of this site, which I built with
+        Gatsby.
+      </p>
+    </Layout>
+  )
 }
 
 export const Head = () => (
-    <>
-        <title>About me</title>
-        <meta name="description" content="Your description" />
-    </>
+    <Seo title="About Me" />
 )
 
 export default AboutPage
